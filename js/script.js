@@ -31,8 +31,13 @@ function getRandomQuote(array) {
     var randomNumber = Math.floor(Math.random() * array.length);
     return array[randomNumber];
 }
-
-// Create the printQuote funtion and name it printQuote
+function changColor() {
+    var r = Math.floor(Math.random() * 256);
+    var g = Math.floor(Math.random() * 256);
+    var b = Math.floor(Math.random() * 256);
+    return `rgb(${r},${g},${b})`;
+}
+// Create the printQuote function and name it printQuote
 function printQuote() {
     var myQuote = getRandomQuote(quotes);
     var output = `
@@ -43,6 +48,7 @@ function printQuote() {
         </p>
     `;
     document.getElementById("quote-box").innerHTML = output;
+    document.body.style.backgroundColor = changColor();
 }
 
 // This event listener will respond to "Show another quote" button clicks
