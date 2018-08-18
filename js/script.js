@@ -28,7 +28,7 @@ var quotes = [
 
 // Create the getRandomQuuote function and name it getRandomQuote
 function getRandomQuote(array) {
-    var randomNumber = Math.floor(Math.random() * array.length+1);
+    var randomNumber = Math.floor(Math.random() * array.length);
     return array[randomNumber];
 }
 
