@@ -51,6 +51,8 @@ function printQuote() {
     document.body.style.backgroundColor = changColor();
 }
 
+setInterval(printQuote,6000);
+
 // This event listener will respond to "Show another quote" button clicks
 // when user clicks anywhere on the button, the "printQuote" function is called
 document
